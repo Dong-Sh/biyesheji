@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.AccountTableMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.AccountTable">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="workers_id" jdbcType="INTEGER" property="workersId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    workers_id, username, password
+  </sql>
+</mapper>

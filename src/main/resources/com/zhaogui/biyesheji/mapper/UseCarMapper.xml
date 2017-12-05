@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.UseCarMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.UseCar">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="workers_id" jdbcType="INTEGER" property="workersId" />
+    <result column="phone" jdbcType="INTEGER" property="phone" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="department_person" jdbcType="INTEGER" property="departmentPerson" />
+    <result column="apply_time" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="cars" jdbcType="INTEGER" property="cars" />
+    <result column="is_private" jdbcType="BIT" property="isPrivate" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.zhaogui.biyesheji.entity.UseCar">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="handle_matter" jdbcType="LONGVARCHAR" property="handleMatter" />
+    <result column="handle_place" jdbcType="LONGVARCHAR" property="handlePlace" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, workers_id, phone, start_time, end_time, department_person, apply_time, cars, 
+    is_private
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    handle_matter, handle_place
+  </sql>
+</mapper>

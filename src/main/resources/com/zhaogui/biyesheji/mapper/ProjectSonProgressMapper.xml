@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.ProjectSonProgressMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.ProjectSonProgress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="project_id" jdbcType="INTEGER" property="projectId" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="progress_bar" jdbcType="INTEGER" property="progressBar" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, project_id, state, progress_bar
+  </sql>
+</mapper>

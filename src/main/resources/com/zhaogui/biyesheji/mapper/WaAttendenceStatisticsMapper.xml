@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.WaAttendenceStatisticsMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.WaAttendenceStatistics">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="attendence_id" jdbcType="INTEGER" property="attendenceId" />
+    <id column="workers_id" jdbcType="INTEGER" property="workersId" />
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="normal" jdbcType="DECIMAL" property="normal" />
+    <result column="business_travel" jdbcType="DECIMAL" property="businessTravel" />
+    <result column="paid_vacation" jdbcType="DECIMAL" property="paidVacation" />
+    <result column="sick_leave" jdbcType="DECIMAL" property="sickLeave" />
+    <result column="compassionate_leave" jdbcType="DECIMAL" property="compassionateLeave" />
+    <result column="hugn" jdbcType="DECIMAL" property="hugn" />
+    <result column="take_some_time_off" jdbcType="DECIMAL" property="takeSomeTimeOff" />
+    <result column="double_salary" jdbcType="DECIMAL" property="doubleSalary" />
+    <result column="absenteeism" jdbcType="DECIMAL" property="absenteeism" />
+    <result column="leave_early" jdbcType="DECIMAL" property="leaveEarly" />
+    <result column="late" jdbcType="DECIMAL" property="late" />
+    <result column="overtime" jdbcType="DECIMAL" property="overtime" />
+    <result column="car_allowance" jdbcType="DECIMAL" property="carAllowance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    attendence_id, workers_id, ID, normal, business_travel, paid_vacation, sick_leave, 
+    compassionate_leave, hugn, take_some_time_off, double_salary, absenteeism, leave_early, 
+    late, overtime, car_allowance
+  </sql>
+</mapper>

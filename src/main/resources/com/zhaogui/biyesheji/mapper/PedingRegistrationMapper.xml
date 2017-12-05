@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.PedingRegistrationMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.PedingRegistration">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="phone" jdbcType="VARCHAR" property="phone" />
+    <id column="manager_id" jdbcType="INTEGER" property="managerId" />
+    <id column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="create_id" jdbcType="INTEGER" property="createId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    phone, manager_id, create_time, state, create_id
+  </sql>
+</mapper>

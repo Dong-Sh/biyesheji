@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.ProjectAuditMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.ProjectAudit">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="project_id" jdbcType="INTEGER" property="projectId" />
+    <id column="type" jdbcType="INTEGER" property="type" />
+    <id column="manager_id" jdbcType="INTEGER" property="managerId" />
+    <id column="progredd_bar" jdbcType="INTEGER" property="progreddBar" />
+    <result column="opinion" jdbcType="INTEGER" property="opinion" />
+    <result column="date" jdbcType="TIMESTAMP" property="date" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    project_id, type, manager_id, progredd_bar, opinion, date
+  </sql>
+</mapper>

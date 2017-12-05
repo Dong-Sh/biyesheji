@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.ReportFormMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.ReportForm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="workers_id" jdbcType="INTEGER" property="workersId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.zhaogui.biyesheji.entity.ReportForm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="finish_work" jdbcType="LONGVARCHAR" property="finishWork" />
+    <result column="un_work" jdbcType="LONGVARCHAR" property="unWork" />
+    <result column="coordinate_work" jdbcType="LONGVARCHAR" property="coordinateWork" />
+    <result column="remarks" jdbcType="LONGVARCHAR" property="remarks" />
+    <result column="summary" jdbcType="LONGVARCHAR" property="summary" />
+    <result column="work_play" jdbcType="LONGVARCHAR" property="workPlay" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, workers_id, create_time, type
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    finish_work, un_work, coordinate_work, remarks, summary, work_play
+  </sql>
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.ProjectBaseMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.ProjectBase">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="project_number" jdbcType="VARCHAR" property="projectNumber" />
+    <result column="project_workers" jdbcType="INTEGER" property="projectWorkers" />
+    <result column="es_start_time" jdbcType="TIMESTAMP" property="esStartTime" />
+    <result column="es_end_time" jdbcType="TIMESTAMP" property="esEndTime" />
+    <result column="es_cycle" jdbcType="DECIMAL" property="esCycle" />
+    <result column="project_state" jdbcType="INTEGER" property="projectState" />
+    <result column="progredd_bar" jdbcType="INTEGER" property="progreddBar" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="create_id" jdbcType="INTEGER" property="createId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.zhaogui.biyesheji.entity.ProjectBase">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="body" jdbcType="LONGVARCHAR" property="body" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, project_number, project_workers, es_start_time, es_end_time, es_cycle, project_state, 
+    progredd_bar, create_date, create_id
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    body
+  </sql>
+</mapper>

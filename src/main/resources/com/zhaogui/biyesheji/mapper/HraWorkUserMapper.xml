@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaogui.biyesheji.mapper.HraWorkUserMapper">
+  <resultMap id="BaseResultMap" type="com.zhaogui.biyesheji.entity.HraWorkUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="id_card" jdbcType="VARCHAR" property="idCard" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="birth_date" jdbcType="DATE" property="birthDate" />
+    <result column="age" jdbcType="CHAR" property="age" />
+    <result column="department_id" jdbcType="INTEGER" property="departmentId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="jurisdiction_id" jdbcType="INTEGER" property="jurisdictionId" />
+    <result column="state" jdbcType="VARCHAR" property="state" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ID, name, id_card, phone, birth_date, age, department_id, create_time, jurisdiction_id, 
+    state
+  </sql>
+</mapper>
